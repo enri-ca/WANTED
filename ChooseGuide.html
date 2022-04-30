@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ChooseGuide.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ChooseGuide" startnode="1" creator="Twine" creator-version="2.3.16" ifid="47A021B8-772A-445D-806D-638FE4E9B2D0" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home page" tags="" position="701,270" size="100,100">#Home page
+<tw-storydata name="ChooseGuide" startnode="1" creator="Twine" creator-version="2.3.16" ifid="47A021B8-772A-445D-806D-638FE4E9B2D0" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home page" tags="" position="703,264" size="200,100">#Home page
 //In the home page of the Museum/Virtual exhibition, a button on the right top corner offers the option &quot;Choose a guide&quot;: click on it to start the interactive experience!//
 
 ---
@@ -33,8 +33,8 @@ Who want to be your guide through the exhibition?
 ---
 
 Choose your pet features:
-Pet name: (input-box:2bind _color,&quot;=XX=&quot;)
-Your name: (input-box:2bind _color,&quot;=XX=&quot;)
+Pet name: (input-box:2bind _petname,&quot;=XX=&quot;)
+Your name: (input-box:2bind _humanname,&quot;=XX=&quot;)
 Type: (dropdown: 2bind $Type,&quot;dog&quot;,&quot;cat&quot;,&quot;other&quot;)
 Size: (dropdown: 2bind $Size,&quot;small&quot;,&quot;medium&quot;,&quot;big&quot;)
 main color: (input-box:2bind _color,&quot;=XX=&quot;)
@@ -160,12 +160,10 @@ Choose [[a new story-&gt;Choose a story]]
 Please let to us your opionion! 
 Your suggestions would be really useful to improve the quality of our services:
 
-* Overall, how much did yoy like the interactive experience?
-
-(dropdown: $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
-* Did you like the guide you have choosen? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
-* How useful have been the contents you were told? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
-* Would you recommend this experience to other? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
+* Did you like the guide you have choosen? (dropdown: 2bind $guide, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
+* How useful have been the contents you were told? (dropdown: 2bind $contents, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
+* Overall, how much did yoy like the interactive experience? (dropdown: 2bind $overall, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
+* Would you recommend this experience to other? (dropdown: 2bind $recommend, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Free comments/suggestions/complains(input-box:&quot;===XXXXXXXXXXXXXXXXXXXX===========================&quot;)
 
 Thank you very much for your visit!
