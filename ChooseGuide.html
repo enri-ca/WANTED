@@ -9,11 +9,13 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ChooseGuide.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ChooseGuide" startnode="1" creator="Twine" creator-version="2.3.16" ifid="47A021B8-772A-445D-806D-638FE4E9B2D0" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home page" tags="" position="701,271" size="100,100">//In the home page of the Museum/Virtual exhibition, a button on the right top corner offers the option &quot;Choose a guide&quot;: click on it to start the interactive experience!//
+<tw-storydata name="ChooseGuide" startnode="1" creator="Twine" creator-version="2.3.16" ifid="47A021B8-772A-445D-806D-638FE4E9B2D0" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home page" tags="" position="701,270" size="100,100">#Home page
+//In the home page of the Museum/Virtual exhibition, a button on the right top corner offers the option &quot;Choose a guide&quot;: click on it to start the interactive experience!//
 
 ---
 
-[[Choose a guide-&gt;Choose a guide]]</tw-passagedata><tw-passagedata pid="2" name="Choose a guide" tags="" position="702,400" size="100,100">//In this passage, the user can choose a pet to be guided through the exhibition//
+[[Choose a guide-&gt;Choose a guide]]</tw-passagedata><tw-passagedata pid="2" name="Choose a guide" tags="" position="702,400" size="100,100">#Choose a guide
+//In this passage, the user can choose a pet to be guided through the exhibition//
 
 ---
 
@@ -24,7 +26,9 @@ Who want to be your guide through the exhibition?
 * [[Lump-&gt;Hello!]] - Pablo Picasso dog
 * [[Biri-&gt;Hello!]] - Giosetta Fioroni dog
 * [[//Other//-&gt;Hello!]] //- still not available//
-* [[My pet-&gt;My pet becomes a guide]]</tw-passagedata><tw-passagedata pid="3" name="My pet becomes a guide" tags="" position="700,550" size="100,100">//In this passage, the user creates a guide based on their pet basic features//
+* [[My pet-&gt;My pet becomes a guide]]
+</tw-passagedata><tw-passagedata pid="3" name="My pet becomes a guide" tags="" position="700,550" size="100,100">#My pet becomes a guide
+//In this passage, the user creates a guide based on their pet basic features//
 
 ---
 
@@ -34,22 +38,29 @@ Your name: (input-box:2bind _color,&quot;=XX=&quot;)
 Type: (dropdown: 2bind $Type,&quot;dog&quot;,&quot;cat&quot;,&quot;other&quot;)
 Size: (dropdown: 2bind $Size,&quot;small&quot;,&quot;medium&quot;,&quot;big&quot;)
 main color: (input-box:2bind _color,&quot;=XX=&quot;)
-Let [[my pet become a guide-&gt;Hello!]]!</tw-passagedata><tw-passagedata pid="4" name="Hello!" tags="" position="874,552" size="100,100">//In this passage, the guide introduces themselves to the user and asks to choose a story to be told//
+Let [[my pet become a guide-&gt;Hello!]]!</tw-passagedata><tw-passagedata pid="4" name="Hello!" tags="" position="874,552" size="100,100">#Guide introduction
+//In this passage, the guide introduces themselves to the user and asks to choose a story to be told//
 
 ---
 
 Hello, I am your guide!
 My name is ... and ... is my human.
-[[Let&#39;s start with a story!-&gt;Choose a story]]</tw-passagedata><tw-passagedata pid="5" name="Choose a story" tags="" position="1032,547" size="100,100">//In this passage, the user can choose the story they want to be told from the guide//
+[[Let&#39;s start with a story!-&gt;Choose a story]]</tw-passagedata><tw-passagedata pid="5" name="Choose a story" tags="" position="1032,547" size="100,100">#Choose a story
+
+//In this passage, the user can choose the story they want to be told from the guide//
 
 ---
 
 Choose the story you would like to listen to:
 
+&lt;iframe src=&quot;stories.html&quot; width=&quot;1000wv&quot; height=&quot;500wh&quot;&gt;&lt;/iframe&gt;
+
 * [[Frida and Granizo-&gt;Artist-pet story brief introduction]]
 * [[Henri and Minouche-&gt;Artist-pet story brief introduction]]
 * [[Giosetta Fioroni and Biri-&gt;Artist-pet story brief introduction]]
-* [[//Other//-&gt;Artist-pet story brief introduction]] //- still not available//</tw-passagedata><tw-passagedata pid="6" name="Artist-pet story brief introduction" tags="" position="1231,580" size="100,100">//In this passage, the user is briefly introduced to the artist and to the relationship they had with their pet.
+* [[//Other//-&gt;Artist-pet story brief introduction]] //- still not available//</tw-passagedata><tw-passagedata pid="6" name="Artist-pet story brief introduction" tags="" position="1231,580" size="100,100">#Artist-pet story brief introduction
+
+//In this passage, the user is briefly introduced to the artist and to the relationship they had with their pet.
 The user can then choose among knowing more about the artist, about the pet, or choosing another story.//
 
 ---
@@ -60,7 +71,8 @@ They met first their pet //pet&#39;s name// when ... //(brief introduction)//
 What would you like to do now?
 * Know [[more about the artist-&gt;More info about the artist]] (e.g Frida)
 * Know [[more about the pet-&gt;More info about the pet]] (e.g. Granizo)
-* Change to [[another story-&gt;Choose a story]] </tw-passagedata><tw-passagedata pid="7" name="More info about the artist" tags="" position="1406,492" size="100,100">//In this passage, the user can get more details about the artist, their artistic evolution and fortune, their life and curiosity.
+* Change to [[another story-&gt;Choose a story]] </tw-passagedata><tw-passagedata pid="7" name="More info about the artist" tags="" position="1406,492" size="100,100">#info about the artist
+//In this passage, the user can get more details about the artist, their artistic evolution and fortune, their life and curiosity.
 The user can then choose among visiting the artist&#39;s room, knowing more about the pet, or having some suggestions to keep learning.//
 
 ---
@@ -72,7 +84,8 @@ What would you like to do now?
 
 * See the [[artist&#39;s room-&gt;Artist&#39;s room]] of the exhibition
 * Know more about the [[pet-&gt;More info about the pet]]
-* Have some [[suggestions for knowing more-&gt;Suggestions for knowing more]]</tw-passagedata><tw-passagedata pid="8" name="More info about the pet" tags="" position="1402,700" size="100,100">//In this passage, the user can have more details about the pet, their story, the social and cultural consideration of their species, some biological peculiarities.
+* Have some [[suggestions for knowing more-&gt;Further suggestions]]</tw-passagedata><tw-passagedata pid="8" name="More info about the pet" tags="" position="1402,700" size="100,100">#info about the pet
+//In this passage, the user can have more details about the pet, their story, the social and cultural consideration of their species, some biological peculiarities.
 The user can then choose among looking at work of art portraying the pet or knowing more about the artist//
 
 ---
@@ -81,8 +94,9 @@ E.g.
 Granizo is a deer, an animal especially loved from Mexican people...
 
 What would you like to do now?
-* See/Go back to the [[work of art portraying the pet-&gt;Work of art portraying the pet]] in the artist&#39;s room of the exhibition
-* Know more about/Go back to [[the artist-&gt;More info about the artist]]</tw-passagedata><tw-passagedata pid="9" name="Work of art portraying the pet" tags="" position="1627,518" size="100,100">//In this passage, the user can see an emblematic artist&#39;s work of art portraying the pet and have information about it:
+* See/Go back to the [[work of art portraying the pet-&gt;art portraying the pet]] in the artist&#39;s room of the exhibition
+* Know more about/Go back to [[the artist-&gt;More info about the artist]]</tw-passagedata><tw-passagedata pid="9" name="art portraying the pet" tags="" position="1627,518" size="100,100">#Work of art portraying the pet
+//In this passage, the user can see an emblematic artist&#39;s work of art portraying the pet and have information about it:
 * traditional metadata such as the title, technique, measures, date, etc.
 * where the work of art is physically located possibly with a permanet link to the Cultural Institution preserving it
 * a brief story of the work of art.
@@ -100,7 +114,9 @@ Enjoy your visit!
 What would you like to do now?
 * See/Go back to [[other artist&#39;s work of art-&gt;Artist&#39;s room]] in the artist&#39;s room of the exhibition
 * Know [[more about the artist-&gt;More info about the artist]] 
-* Know more about/Go back to [[the pet-&gt;More info about the pet]] </tw-passagedata><tw-passagedata pid="10" name="Artist&#39;s room" tags="" position="1666,302" size="100,100">//In this passage, the user can see the whole artist&#39;s room of the exhibition following a brief overall description illustrating which works of art have been selected and why.
+* Know more about/Go back to [[the pet-&gt;More info about the pet]] </tw-passagedata><tw-passagedata pid="10" name="Artist&#39;s room" tags="" position="1666,302" size="100,100">#Artist&#39;s room
+
+//In this passage, the user can see the whole artist&#39;s room of the exhibition following a brief overall description illustrating which works of art have been selected and why.
 The user can then choose among having more details on the work of art portraying the pet, or knowing more about the artist//
 
 ---
@@ -112,8 +128,10 @@ Enjoy your visit!
 
 What would you like to do now?
 
-* Have more details of the [[work of art portraying the pet-&gt;Work of art portraying the pet]] in the artist&#39;s room of the exhibition
-* Know more about/Go back to [[the artist-&gt;More info about the artist]]</tw-passagedata><tw-passagedata pid="11" name="Suggestions for knowing more" tags="" position="1309,308" size="100,100">//In this passage, the user can get some bibliography and multimedia contents about the artist, the pet, or their relationship.
+* Have more details of the [[work of art portraying the pet-&gt;art portraying the pet]] in the artist&#39;s room of the exhibition
+* Know more about/Go back to [[the artist-&gt;More info about the artist]]</tw-passagedata><tw-passagedata pid="11" name="Further suggestions" tags="" position="1309,308" size="100,100">#Further suggestions
+
+//In this passage, the user can get some bibliography and multimedia contents about the artist, the pet, or their relationship.
 The user can then choose among going back to the artist details, choosing a new story or finishing the interactive experience.//
 
 ---
@@ -132,21 +150,25 @@ What do you like to do now?
 
 Go [[back to the artist-&gt;More info about the artist]] 
 Choose [[a new story-&gt;Choose a story]] 
-[[Finish-&gt;Evaluate the experience]] the visit</tw-passagedata><tw-passagedata pid="12" name="Evaluate the experience" tags="" position="1097,335" size="100,100">//In this passage, the user evaluates their experience//
+[[Finish-&gt;Evaluate the experience]] the visit</tw-passagedata><tw-passagedata pid="12" name="Evaluate the experience" tags="" position="1097,335" size="100,100">#Evaluate the experience
+
+//In this passage, the user evaluates their experience//
 
 ---
 
 Please let to us your opionion! 
 Your suggestions would be really useful to improve the quality of our services:
 
-* Overall, how much did yoy like the interactive experience? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
+* Overall, how much did yoy like the interactive experience?
+
+(dropdown: $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Did you like the guide you have choosen? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * How useful have been the contents you were told? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Would you recommend this experience to other? (dropdown: 2bind $Type,&quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Free comments/suggestions/complains(input-box:&quot;===XXXXXXXXXXXXXXXXXXXX===========================&quot;)
 
 Thank you very much for your visit!
-[[Goodbay!-&gt;Home page]] </tw-passagedata></tw-storydata>
+[[Goodbye!-&gt;Home page]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
