@@ -10,6 +10,23 @@
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.two-grid{
+  display: grid;
+  grid-template-areas: 'left right';
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  margin-top: 1.5vw;
+}
+
+.right{
+  grid-area: right;
+
+}
+
+.left{
+  grid-area: left;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
