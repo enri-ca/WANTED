@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play ChooseGuide.</tw-noscript></noscript></tw-story>
-<tw-storydata name="ChooseGuide" startnode="1" creator="Twine" creator-version="2.3.16" ifid="47A021B8-772A-445D-806D-638FE4E9B2D0" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home page" tags="" position="703,264" size="200,100">#Home page
+<tw-storydata name="ChooseGuide" startnode="1" creator="Twine" creator-version="2.3.16" ifid="47A021B8-772A-445D-806D-638FE4E9B2D0" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home page" tags="" position="703,236" size="200,100">#Home page
 //In the home page of the Museum/Virtual exhibition, a button on the right top corner offers the option &quot;Choose a guide&quot;: click on it to start the interactive experience!//
 
 ---
@@ -22,12 +22,11 @@
 Who want to be your guide through the exhibition?
 
 * &lt;img src=&quot;assets/img/frida_a4.png&quot; width=&quot;5%&quot;&gt; [[Granizo-&gt;Hello!]] - Frida deer
-* &lt;img src=&quot;assets/img/matissegreen.png&quot; width=&quot;5%&quot;&gt; [[Minouche-&gt;Hello!]] - Henri Matisse cat
-* [[Lump-&gt;Hello!]] - Pablo Picasso dog
-* [[Biri-&gt;Hello!]] - Giosetta Fioroni dog
+* &lt;img src=&quot;assets/img/xxx.png&quot; width=&quot;5%&quot;&gt; [[Petote-&gt;Hello!]] - Giosetta Fioroni dog
+* &lt;img src=&quot;assets/img/picasso_blue.png&quot; width=&quot;5%&quot;&gt; [[Lump-&gt;Hello!]] - Pablo Picasso dog
+* &lt;img src=&quot;assets/img/matisse_gatto.jpeg&quot; width=&quot;5%&quot;&gt; [[Minouche-&gt;Hello!]] - Henri Matisse cat
 * [[//Other//-&gt;Hello!]] //- still not available//
-* [[My pet-&gt;My pet becomes a guide]]
-</tw-passagedata><tw-passagedata pid="3" name="My pet becomes a guide" tags="" position="700,550" size="100,100">#My pet becomes a guide
+* [[My pet-&gt;My pet becomes a guide]]</tw-passagedata><tw-passagedata pid="3" name="My pet becomes a guide" tags="" position="700,550" size="100,100">#My pet becomes a guide
 //In this passage, the user creates a guide based on their pet basic features//
 
 ---
@@ -38,30 +37,32 @@ Your name: (input-box:2bind _humanname,&quot;=XX=&quot;)
 Type: (dropdown: 2bind $Type,&quot;dog&quot;,&quot;cat&quot;,&quot;other&quot;)
 Size: (dropdown: 2bind $Size,&quot;small&quot;,&quot;medium&quot;,&quot;big&quot;)
 main color: (input-box:2bind _color,&quot;=XX=&quot;)
-Let [[my pet become a guide-&gt;Hello!]]!</tw-passagedata><tw-passagedata pid="4" name="Hello!" tags="" position="874,552" size="100,100">#Guide introduction
+Let [[my pet become a guide-&gt;Hello!]]!</tw-passagedata><tw-passagedata pid="4" name="Hello!" tags="" position="856,551" size="100,100">#Guide introduction
 //In this passage, the guide introduces themselves to the user and asks to choose a story to be told//
 
 ---
 
 Hello, I am your guide!
 My name is ... and ... is my human.
-[[Let&#39;s start with a story!-&gt;Choose a story]]</tw-passagedata><tw-passagedata pid="5" name="Choose a story" tags="" position="1032,546" size="100,100">#Choose a story
+[[Let&#39;s start with a story!-&gt;Choose a story]]</tw-passagedata><tw-passagedata pid="5" name="Choose a story" tags="" position="1025,550" size="100,100">#Choose a story
 
 //In this passage, the user can choose the story they want to be told from the guide//
 
 ---
-    
+
 Choose the story you would like to listen to:	  
 
 * [[Frida and Granizo-&gt;Artist-pet story brief introduction]]
+* [[Giosetta and Petote-&gt;Artist-pet story brief introduction]]
+* [[Pablo and Lump-&gt;Artist-pet story brief introduction]]
 * [[Henri and Minouche-&gt;Artist-pet story brief introduction]]
-* [[Giosetta Fioroni and Biri-&gt;Artist-pet story brief introduction]]
+* [[Dalì and Babou-&gt;Artist-pet story brief introduction]]
 * [[//Other//-&gt;Artist-pet story brief introduction]] //- still not available//</tw-passagedata><tw-passagedata pid="6" name="Artist-pet story brief introduction" tags="" position="1200,479" size="100,100">#Artist-pet story brief introduction
 
 //In this passage, the user is briefly introduced to the artist and to the relationship they had with their pet.
 The user can then choose among knowing more about the artist, about the pet, or choosing another story.//
- 
- ---
+
+---
 
 //The artist// is born in ... and is famous for ...
 They met first their pet //pet&#39;s name// when ... //---brief introduction---//
@@ -69,7 +70,7 @@ They met first their pet //pet&#39;s name// when ... //---brief introduction---/
 What would you like to do now?
 * Know [[more about the artist-&gt;More info about the artist]] (e.g Frida)
 * Know [[more about the pet-&gt;More info about the pet]] (e.g. Granizo)
-* Change to [[another story-&gt;Choose a story]] </tw-passagedata><tw-passagedata pid="7" name="More info about the artist" tags="" position="1454,451" size="100,100">#info about the artist
+* Change to [[another story-&gt;Choose a story]] </tw-passagedata><tw-passagedata pid="7" name="More info about the artist" tags="" position="1462,303" size="100,100">#info about the artist
 //In this passage, the user can get more details about the artist, their artistic evolution and fortune, their life and curiosity.
 The user can then choose among visiting the artist&#39;s room, knowing more about the pet, or having some suggestions to keep learning.//
 
@@ -80,9 +81,9 @@ E.g.: //Frida// suffered a lot ...
 
 What would you like to do now?
 
-* See the [[artist&#39;s room-&gt;Artist&#39;s room]] of the exhibition
+* See the [[artist&#39;s room-&gt;Artist&#39;s room - Gallery]] of the exhibition
 * Know more about the [[pet-&gt;More info about the pet]]
-* Have some [[suggestions for knowing more-&gt;Further suggestions]]</tw-passagedata><tw-passagedata pid="8" name="More info about the pet" tags="" position="1402,700" size="100,100">#info about the pet
+* Have some [[suggestions for knowing more-&gt;Further suggestions]]</tw-passagedata><tw-passagedata pid="8" name="More info about the pet" tags="" position="1467,545" size="100,100">#info about the pet
 //In this passage, the user can have more details about the pet, their story, the social and cultural consideration of their species, some biological peculiarities.
 The user can then choose among looking at work of art portraying the pet, knowing more about the artist, or having some suggestions to keep learning.//
 
@@ -92,9 +93,9 @@ E.g.
 Granizo is a deer, an animal especially loved from Mexican people...
 
 What would you like to do now?
-* See/Go back to the [[work of art portraying the pet-&gt;art portraying the pet]] in the artist&#39;s room of the exhibition
+* See/Go back to the [[work of art portraying the pet-&gt;Artist&#39;s room - art portraying the pet]] in the artist&#39;s room of the exhibition
 * Know more about/Go back to [[the artist-&gt;More info about the artist]]
-* Have some [[suggestions for knowing more-&gt;Further suggestions]]</tw-passagedata><tw-passagedata pid="9" name="art portraying the pet" tags="" position="1627,518" size="100,100">#Work of art portraying the pet
+* Have some [[suggestions for knowing more-&gt;Further suggestions]]</tw-passagedata><tw-passagedata pid="9" name="Artist&#39;s room - art portraying the pet" tags="" position="1669,547" size="100,100">#Artist&#39;s room - Work of art portraying the pet
 //In this passage, the user can see an emblematic artist&#39;s work of art portraying the pet and have information about it:
 * traditional metadata such as the title, technique, measures, date, etc.
 * where the work of art is physically located possibly with a permanet link to the Cultural Institution preserving it
@@ -111,9 +112,9 @@ Enjoy your visit!
 
 
 What would you like to do now?
-* See/Go back to [[other artist&#39;s work of art-&gt;Artist&#39;s room]] in the artist&#39;s room of the exhibition
+* See/Go back to [[other artist&#39;s work of art-&gt;Artist&#39;s room - Gallery]] in the artist&#39;s room of the exhibition
 * Know [[more about the artist-&gt;More info about the artist]] 
-* Know more about/Go back to [[the pet-&gt;More info about the pet]] </tw-passagedata><tw-passagedata pid="10" name="Artist&#39;s room" tags="" position="1666,302" size="100,100">#Artist&#39;s room
+* Know more about/Go back to [[the pet-&gt;More info about the pet]] </tw-passagedata><tw-passagedata pid="10" name="Artist&#39;s room - Gallery" tags="" position="1667,302" size="100,100">#Artist&#39;s room - Gallery
 
 //In this passage, the user can see the whole artist&#39;s room of the exhibition following a brief overall description illustrating which works of art have been selected and why.
 The user can then choose among having more details on the work of art portraying the pet, or knowing more about the artist//
@@ -121,14 +122,16 @@ The user can then choose among having more details on the work of art portraying
 ---
 
 Here you are in the Artist&#39;s room of the exhibition. 
-//---brief description---//
+&lt;div class=&quot;sketchfab-embed-wrapper&quot;&gt;
+		&lt;iframe title=&quot;Frida&#39;s room&quot; frameborder=&quot;0&quot; allowfullscreen mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; allow=&quot;autoplay; fullscreen; xr-spatial-tracking&quot; xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=&quot;https://sketchfab.com/models/e5f124def4dc40dcaf96f73a2363854c/embed?annotations_visible=1&quot;&gt; &lt;/iframe&gt; &lt;p style=&quot;font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;&quot;&gt; &lt;a href=&quot;https://sketchfab.com/3d-models/fridas-room-e5f124def4dc40dcaf96f73a2363854c?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=e5f124def4dc40dcaf96f73a2363854c&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt; Frida&#39;s room &lt;/a&gt; by &lt;a href=&quot;https://sketchfab.com/alisiazarbo?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=e5f124def4dc40dcaf96f73a2363854c&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt; alisiazarbo &lt;/a&gt; on &lt;a href=&quot;https://sketchfab.com?utm_medium=embed&amp;utm_campaign=share-popup&amp;utm_content=e5f124def4dc40dcaf96f73a2363854c&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold; color: #1CAAD9;&quot;&gt;Sketchfab&lt;/a&gt;
+		&lt;/div&gt;
 Enjoy your visit!
 
 
 What would you like to do now?
 
-* Have more details of the [[work of art portraying the pet-&gt;art portraying the pet]] in the artist&#39;s room of the exhibition
-* Know more about/Go back to [[the artist-&gt;More info about the artist]]</tw-passagedata><tw-passagedata pid="11" name="Further suggestions" tags="" position="1242,388" size="100,100">#Further suggestions
+* Have more details of the [[work of art portraying the pet-&gt;Artist&#39;s room - art portraying the pet]] in the artist&#39;s room of the exhibition
+* Know more about/Go back to [[the artist-&gt;More info about the artist]]</tw-passagedata><tw-passagedata pid="11" name="Further suggestions" tags="" position="1277,306" size="100,100">#Further suggestions
 
 //In this passage, the user can get some bibliography and multimedia contents about the artist, the pet, or their relationship.
 The user can then choose among going back to the artist details, choosing a new story or finishing the interactive experience.//
@@ -142,14 +145,14 @@ E.g.:
 * Brown, Monica. //Frida Kahlo y sus animalitos//. NorthSouth, 2017.
 * Feldman, Gail Carr. &quot;Dissociation, Repetition-compulsion, and the Art of Frida Kahlo.&quot; //Journal of the American Academy of Psychoanalysis// 27, no. 3 (1999): 387-96. 
 * //Frida//. Milano: Eagle Pictures, 2011.
-* //Frida KAHLO création du Panta Théâtre// JT Basse Normandie soir - 31.01.1997 - 02:19 - vidéoEuropeana - &lt;a href=&quot;https://www.europeana.eu/it/item/2051908/data_euscreenXL_ina_CN00000024496&quot; target=&quot;_blank&quot;&gt;https://www.europeana.eu/it/item/2051908/data_euscreenXL_ina_CN00000024496&lt;/a&gt;
+* //Frida KAHLO création du Panta Théâtre// JT Basse Normandie soir - 31.01.1997 - 02:19 - vidéoEuropeana - https://www.europeana.eu/it/item/2051908/data_euscreenXL_ina_CN00000024496
 * Kahlo, Frida, and Raquel Tibol. //Frida Kahlo par Frida Kahlo//. Cristian Bourgois Éditeur, 2007.
 
 What do you like to do now?
 
 Go [[back to the artist-&gt;More info about the artist]] 
 Choose [[a new story-&gt;Choose a story]] 
-[[Finish-&gt;Evaluate the experience]] the visit</tw-passagedata><tw-passagedata pid="12" name="Evaluate the experience" tags="" position="1097,333" size="100,100">#Evaluate the experience
+[[Finish-&gt;Involving the user - additional services]] the visit</tw-passagedata><tw-passagedata pid="12" name="Evaluate the experience" tags="" position="1101,301" size="100,100">#Evaluate the experience
 
 //In this passage, the user evaluates their experience//
 
@@ -160,20 +163,103 @@ Your suggestions would be really useful to improve the quality of our services:
 
 * Did you like the guide you have choosen? (dropdown: 2bind $guide, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * How useful have been the contents you were told? (dropdown: 2bind $contents, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
+* How much did you appreciated the final services offered (&quot;Share your story&quot;, &quot;3d print your pet&quot;, &quot;Search for your pet&quot;)? (dropdown: 2bind $services, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Overall, how much did yoy like the interactive experience? (dropdown: 2bind $overall, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Would you recommend this experience to other? (dropdown: 2bind $recommend, &quot;extremely&quot;, &quot;very&quot;, &quot;somewhat&quot;, &quot;not so&quot;, &quot;not at all&quot;)
 * Free comments/suggestions/complains(input-box:&quot;===XXXXXXXXXXXXXXXXXXXX===========================&quot;)
 
 Thank you very much for your visit!
-See a [[preview of my answers-&gt;Answers preview]]</tw-passagedata><tw-passagedata pid="13" name="Answers preview" tags="" position="958,327" size="100,100">#Answers preview
+See a [[preview of my answers-&gt;Answers preview]]</tw-passagedata><tw-passagedata pid="13" name="Answers preview" tags="" position="954,302" size="100,100">#Answers preview
 
 //In this passage, the user rhas a preview of their answers//
 
 ---
 These are your answers to the evalution survey, do you confirm?
-(checkbox: 2bind $Yes,&quot;I want to send my answers&quot;)
-Go back to the [[survey-&gt;Evaluate the experience]] 
-[[Goodbye!-&gt;Home page]] </tw-passagedata></tw-storydata>
+
+No, go back to the [[survey-&gt;Evaluate the experience]] 
+Yes, (checkbox: 2bind $Yes,&quot;I want to send my answers&quot;). [[Goodbye!-&gt;Home page]] </tw-passagedata><tw-passagedata pid="14" name="Involving the user - additional services" tags="" position="1173,148" size="100,100">#Involving the user - additional services
+
+//In this passage, the user is asked for additional services as Share their stories, explore the merchandising options, or - in the future - use the new tool for Searching the pet.
+The user can also leave the application.//
+
+---
+
+We are concluding our time togheter, before saying goodbye, would you like to do something else?
+
+* [[Share-&gt;Share your story]] your story 
+* [[Look for a souvenir-&gt;Look for a souvenir]] 
+* 3d print your pet - [[//in progress application//-&gt;3d print your pet]]
+* Search for your pet - [[//in progress application//-&gt;Search for your pet]]
+* [[None-&gt;Evaluate the experience]] of them</tw-passagedata><tw-passagedata pid="15" name="Share your story" tags="" position="953,188" size="100,100">#Share your story
+
+//In this passage, the user can use the &quot;Share your story&quot; form to upload a photo and a brief text about their pet-human story.
+The user can then choose among going back to the additional services or finishing the interactive experience.//
+
+---
+
+Please let your pet-human story in Wanted! project:
+
+&lt;iframe src=&quot;Share.html&quot;&gt;&lt;/iframe&gt;
+
+Thank you very much! 
+
+* Go back to the [[additional services-&gt;Involving the user - additional services]]
+* [[Goodbye-&gt;Evaluate the experience]]</tw-passagedata><tw-passagedata pid="16" name="3d print your pet" tags="" position="1061,21" size="100,100">#3d print your pet - in development
+
+//In this detour, the user can upload a 360° video of their pet to obtain back a little 3d printed model of their beloved. 
+They will be guided in the steps learing also some basic knowledge of photogrammetry and 3d modeling.
+The user can then choose among going back to the additional services or finishing the interactive experience.//
+
+---
+
+Here the steps of the application in development:
+
+* Some basic knowledge in photogrammetry
+* Fill in the form
+* Complete the form uploading a 360° video of your pet
+* How many copies of your 3d printed pet you want?
+* Send them at ...
+* How to pay ...
+
+Thank you very much for using our merchandisign service! 
+
+* Go back to the [[additional services-&gt;Involving the user - additional services]]
+* [[Goodbye-&gt;Evaluate the experience]]</tw-passagedata><tw-passagedata pid="17" name="Search for your pet" tags="" position="953,72" size="100,100">#Search for your pet - in development
+
+//In this detour, the user can use a tool to publish a WANTED! announcement for their lost pets completed with geolocation data. 
+The user will be guided in the steps.
+The user can then choose among going back to the additional services or finishing the interactive experience.//
+
+---
+
+Hi here you can ....:
+
+* Fill in the form
+* ..
+
+Thank you very much for using our Wanted! tool 
+
+* Go back to the [[additional services-&gt;Involving the user - additional services]]
+* [[Goodbye-&gt;Evaluate the experience]]</tw-passagedata><tw-passagedata pid="18" name="Look for a souvenir" tags="" position="1180,11" size="100,100">#Look for a souvenir
+
+//In this detour, the user can explore the merchandising offered by the project. They will be proposed also with the &quot;3d print your pet&quot; in development application.
+The user can then choose among going back to the additional services or finishing the interactive experience.//
+
+---
+
+Would you like to bring with you a Wanted! souvenir?
+
+* Wanted! trading card and album
+* Guess Who? Wanted! ed.
+* 3d print your pet - [[//in progress application//-&gt;3d print your pet]]
+
+* Send them at ...
+* How to pay ...
+
+Thank you very much for using our merchandisign service! 
+
+* Go back to the [[additional services-&gt;Involving the user - additional services]]
+* [[Goodbye-&gt;Evaluate the experience]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
