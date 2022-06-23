@@ -135,15 +135,13 @@
 				  At the same time, the project would also like to become a support tool in the search for the animal in the early stages of its disappearance, through the possibility of directly publishing the loss announcements accompanied by geolocation data. Each user can have the option to upload and share their own story or simply link that of others.</br>
 				  In addition to the suggestion of the user's emotional-cognitive aspect, the project also wants to provide an informative contribution, presenting some stories, works, performances of artists who have wanted to consecrate their emotional ties with their animal. 
 				</p>
-				</div>
-		</div>
-	</div>
+				
 	
 		<div class="container accordion" id="Context">
 			<div class="accordion-item">
 			<h2 class="accordion-header" id="headingContext">
 			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContext" aria-expanded="true" aria-controls="collapseOne">The Context</button></h2>
-				<div id="collapseContext" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#Intro">
+				<div id="collapseContext" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 					<div class="accordion-body">
 						
 						<div class="row" id="RI">
@@ -352,14 +350,23 @@ Since the theme belongs to an emotional conceptuality, a good idea could be to e
 <ol>1.	A brief introduction on the pet artist story</ol>
 <ol>2.	More info about the artist</ol>
 <ol>3.	More info about the pet</ol>
-<ol>4.	The Artist’ room: showing some of their work related to the human-pet bound and the work of art portraying the pet</ol>
-<ol>5.	Further suggestions to know more about the topic</ol>
+<ol>4.	The Artist’ room - Gallery: showing some of their work related to the human-pet bound</ol>
+<ol>5.	The Artist’ room - Work of art portraying the pet: showing the specific work of art</ol>
+<ol>6.	Further suggestions to know more about the topic</ol>
 </ul></p>
 <p>
-We then created a “classic” virtual exhibition based on Omeka.net, a tool that allowed us to create a database of work of art, collections, and exhibition path, as well as to propose to the user advanced tools for search and browse through the items proposed.<br>
-To this scope, we completed the museological path for two pilot artists – Frida Kahlo and Giosetta Fioroni – while we limited just to list other possible artist-pet relationship to be explored.</p>
+
+<h6>The Virtual Exhibition</h6>
+<p>
+We then created a “classic” Virtual Exhibition based on the <a href="https://www.omeka.net/" target="_blank">Omeka.net</a> free trial version, a tool that allowed us to create a database of work of art, collections, and exhibition path, as well as to propose to the user advanced tools for search and browse through the items proposed.<br>
+To this scope, we completed the museological path for two pilot artists – Frida Kahlo and Giosetta Fioroni – while we limited just to list other possible artist-pet relationship to be explored such as Pablo Picasso and Lump, Henry Matisse and Minouche, Dalì and Babou, etc.</p>
+
+<h6>The Interactive application and the 3d room</h6>
 <p>We also devised a more <strong>interactive application “Choose your guide”</strong> that give the possibility to explore the exhibition with a freer path but with the help of a proper guide, instead of being autonomous in reading the critical parts and linearly scroll the contents, and the guide will also suggest further activities at the end of the visit to engage more the user.<br>
 The visit is then divided in rooms, accordingly with the path of the Virtual linear exhibition, each of which is dedicated to a different artist and its bond with their pet and other animals. The virtual room is showed as a real museum room (walls, sofa, paints with panels), the paintings have an interactive panel trough which (by clicking it) the user can visualize the work and go into detail.<br>
+
+<h6>Theoric classification</h6>
+
 The application, whose details will be discussed in the Development section, has then engagement and education as primary goals and it can be classified in the E or F category, according to Simona Caraceni taxonomy:</p>
 
 				<table>
@@ -468,6 +475,12 @@ Cognitive: increase visitor participation (new services as “Search for your pe
       </div>
 	</div>
 	</div>
+	
+	</div>
+	
+	</div>
+	</div>
+	</div>
 
 <!-- ======= Development Section ======= -->
     <div class="container accordion" id="Dev">
@@ -477,11 +490,18 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 		Development
 		</button></h2>
 		<div id="collapseDev" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      			<div class="accordion-body">
-        		
-        <p>...</p>
-	<h5>(a) The story (include an interactive narrative using Twine)</h5>
+      		<div class="accordion-body">
+			
+        	<div class="container accordion" id="TheStory">
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="TheStory">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTheStory" aria-expanded="true" aria-controls="collapseOne">(a) The story (include an interactive narrative using Twine)</button></h2>
+				<div id="collapseTheStory" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					
+						<div class="container" id="Story">	
 	<p>Our story tells about a young-adult visitor looking for a new approach art history exhibition. He or she finds the Wanted! website where it is possible to access a short historical preview in the In History section and a selection of pieces of art in the In Art section. She or he is emotionally involved due to their childhood and recent souvenirs about their pets. They enjoy the exibihion, they gain more knowledge and they are happy to contribute at Your stories section with their pets' stories. Moreover they are happy and amused to realize a 3d rendering of their pet to be used in VR or AR and to be able to order for a 3d printed model of it to be gifted.</p>
+	
 	      	<h2>PERSONAE </h2>
 	<div class="two-grid">
 	  <div class="left">
@@ -499,12 +519,21 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 
 	<p> SCENARIO </p>
 
+	</div>
+	</div>	
+	</div>	
+	</div>	
+	</div>		  
 		  
-		  
-		  </br>	
-
-<h5 id="ID">(b) Description of the interaction between the project and the users (include Interaction Diagram)</h5>
-</br>
+        	
+			<div class="container accordion" id="InteractionDiagram">
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="InteractionDiagram">
+			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInteractionDiagram" aria-expanded="true" aria-controls="collapseOne">Description of the interaction between the project and the users (include Interaction Diagram)</button></h2>
+				<div id="collapseInteractionDiagram" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					
+						<div class="container" id="ID">	
 	<div class="row">
 	  <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
 		  <h5><b>Choose your guide</b></h5></br>
@@ -522,7 +551,6 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 	   <iframe ondblclick="requestFullscreen()" src="ChooseGuide.html" title="Choose your guide application" width=100%" allow="fullscreen"></iframe>
 	  </div>
 	</div>
-	</br>
 
 	<div class="row">
 	  <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
@@ -541,9 +569,8 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 	   <iframe src="Share.html" title="Share your Stories application" width="100%"></iframe>
 	  </div>      
 	</div>
-	</br>
 										       
-	<div class="row">
+	<!--div class="row">
 	  <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
 		  <h5><b>3d print your pet!</b></h5></br>
 	      </div>
@@ -563,9 +590,21 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 	</br>
 										       
 										       
-			<h5>(c) Development to reach the cognitive focus</h5>
-			<p>....</p>
-			<h5>(c) Foreseen workflow (includes needed software, hardware, professionals)</h5>
+			<h5>(c) Development to reach the cognitive focus</h5-->
+	</div>
+	</div>	
+	</div>	
+	</div>	
+	</div>		  
+	
+	<div class="container accordion" id="Workflow">
+		<div class="accordion-item">
+		<h2 class="accordion-header" id="Workflow">
+		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWorkflow" aria-expanded="true" aria-controls="collapseOne">(c) Foreseen workflow (includes needed software, hardware, professionals)</button></h2>
+			<div id="collapseWorkflow" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					
+					<div class="container" id="WF">	
 			<p>The actual realization of the sketched Virtual Exhibition and the related applications surely required a multidisciplinary team with professionals covering all aspects of issues related to contents or technical aspects; here just a probability incomplete list:</p>
 <p><ul>
 <ol>1.	Art historian: to curate the scientific aspects of the exhibition and the related documentation</ol>
@@ -585,8 +624,28 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 <ol>4.	Twine</ol>
 <ol>5.	Zephir 3d</ol>
 </ul></p>
-			<h5>(d) Further development and maintenance issues</h5>
+
+</div>
+	</div>	
+	</div>	
+	</div>	
+	</div>		  
+        	
+	<div class="container accordion" id="maintenance">
+		<div class="accordion-item">
+		<h2 class="accordion-header" id="maintenanceh2">
+		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsemaintenance" aria-expanded="true" aria-controls="collapseOne">(d) Further development and maintenance issues</button></h2>
+			<div id="collapsemaintenance" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					
+					<div class="container" id="maintenance">	
+			<h5></h5>
 			<p>....</p>	
+			</div>
+	</div>	
+	</div>	
+	</div>	
+	</div>	
 		</div>
 	  	</div>
     	</div>
@@ -667,6 +726,27 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 		<div id="collapseBib" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       	<div class="accordion-body">
 				
+	  <h4>Intro</h4>
+	  <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
+  <div class="csl-entry"><i>A Cat Co-Authored an Influential Physics Paper</i>. <a href="https://www.science.org/content/article/cat-co-authored-influential-physics-paper">https://www.science.org/content/article/cat-co-authored-influential-physics-paper</a>. Accessed 22 June 2022.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=A%20cat%20co-authored%20an%20influential%20physics%20paper&amp;rft.description=In%201975%2C%20Jack%20Hetherington%20and%20F.D.C.%20Willard%20published%20a%20paper%20together%20in%20Physical%20Review%20Letters.%20The%20paper%20is%20an%20influential%20view%20into%20atomic%20behavior%20and%20has%20been%20cited%20multiple%20times%2C%20but%20only%20one%20of%20its%20authors%20is%20human...&amp;rft.identifier=https%3A%2F%2Fwww.science.org%2Fcontent%2Farticle%2Fcat-co-authored-influential-physics-paper&amp;rft.language=en"></span>
+  <div class="csl-entry">Jérôme Michalon. ‘Causa animal y ciencias sociales Del antropocentrismo’. <i>Nueva sociedad</i>, no. 288, 2020, pp. 116–26.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Causa%20animal%20y%20ciencias%20sociales%20Del%20antropocentrismo&amp;rft.jtitle=Nueva%20sociedad&amp;rft.issue=288&amp;rft.au=undefined&amp;rft.date=2020&amp;rft.pages=116%E2%80%93126&amp;rft.spage=116&amp;rft.epage=126&amp;rft.issn=0251-3552&amp;rft.language=spa"></span>
+  <div class="csl-entry">Johnson, Daniel. <i>Yuri Knorozov: How a Soviet Scientist Managed to Decode the Mayan Writing - The Global Domain News</i>. 2 Feb. 2020, <a href="http://www.globaldomainsnews.com/yuri-knorozov-how-a-soviet-scientist-managed-to-decode-the-mayan-writing">http://www.globaldomainsnews.com/yuri-knorozov-how-a-soviet-scientist-managed-to-decode-the-mayan-writing</a>.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Yuri%20Knorozov%3A%20how%20a%20Soviet%20scientist%20managed%20to%20decode%20the%20Mayan%20writing%20-%20The%20Global%20Domain%20News&amp;rft.description=In%20Mexico%20there%20is%20a%20monument%20to%20the%20Soviet%20scientist%20Yuri%20Knorozov.%20This%20is%20a%20sculpture%20depicting%20severe%20human%20holding%20the%20cat.%20No%20ordinary%20monument.%20And%20why%20in%20Mexico%3F%20Why%20a%20cat%3F&amp;rft.identifier=http%3A%2F%2Fwww.globaldomainsnews.com%2Fyuri-knorozov-how-a-soviet-scientist-managed-to-decode-the-mayan-writing&amp;rft.aufirst=Daniel&amp;rft.aulast=Johnson&amp;rft.au=Daniel%20Johnson&amp;rft.date=2020-02-02&amp;rft.language=en-US"></span>
+  <div class="csl-entry">Lanjouw, Annette. <i>The Politics of Species : Reshaping Our Relationships with Other Animals</i>. 20130101.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-1-107-03260-6&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20Politics%20of%20Species%20%3A%20Reshaping%20Our%20Relationships%20with%20Other%20Animals&amp;rft.aufirst=Annette&amp;rft.aulast=Lanjouw&amp;rft.au=Annette%20Lanjouw&amp;rft.isbn=978-1-107-03260-6"></span>
+  <div class="csl-entry">Laurent-Simpson, Andrea. <i>Just like Family: How Companion Animals Joined the Household</i>. University Press, 2021.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-1-4798-7588-7&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Just%20like%20family%3A%20how%20companion%20animals%20joined%20the%20household&amp;rft.place=New%20York&amp;rft.publisher=University%20Press&amp;rft.series=Animals%20in%20context&amp;rft.aufirst=Andrea&amp;rft.aulast=Laurent-Simpson&amp;rft.au=Andrea%20Laurent-Simpson&amp;rft.date=2021&amp;rft.isbn=978-1-4798-7588-7&amp;rft.language=eng"></span>
+  <div class="csl-entry">‘List of Animals Awarded Human Credentials’. <i>Wikipedia</i>, 10 June 2022. <i>Wikipedia</i>, <a href="https://en.wikipedia.org/w/index.php?title=List_of_animals_awarded_human_credentials&amp;oldid=1092512160">https://en.wikipedia.org/w/index.php?title=List_of_animals_awarded_human_credentials&amp;oldid=1092512160</a>.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=encyclopediaArticle&amp;rft.title=List%20of%20animals%20awarded%20human%20credentials&amp;rft.rights=Creative%20Commons%20Attribution-ShareAlike%20License&amp;rft.description=This%20list%20of%20animals%20awarded%20human%20credentials%20includes%20nonhuman%20animals%20who%20have%20been%20submitted%20as%20applicants%20to%20suspected%20diploma%20mills%2C%20and%20have%20gotten%20a%20diploma.%20On%20occasion%2C%20they%20have%20been%20admitted%20and%20granted%20a%20degree%2C%20as%20reported%20in%20reliable%20sources.%20Animals%20are%20often%20used%20as%20a%20device%20to%20clearly%20demonstrate%20the%20lax%20standards%20or%20fraudulent%20activities%20of%20the%20awarding%20institutions.%20In%20at%20least%20one%20case%2C%20a%20cat's%20degree%20helped%20lead%20to%20a%20successful%20fraud%20prosecution%20against%20the%20institution%20that%20had%20issued%20it.%0AOn%20occasion%2C%20accredited%20institutions%20may%20have%20awarded%20mock%20degrees%20to%20animals%20for%20humorous%20purposes%2C%20e.g.%20UNSW%20awarded%20a%20%22dogtorate%22%20(not%20doctorate)%20to%20a%20dog%3B%20such%20cases%20are%20not%20included%20below.&amp;rft.identifier=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DList_of_animals_awarded_human_credentials%26oldid%3D1092512160&amp;rft.date=2022-06-10&amp;rft.language=en"></span>
+  <div class="csl-entry">scishenan. ‘Animal Co-Authors’. <i>Science Shenanigans</i>, 14 July 2017, <a href="https://www.science-shenanigans.com/animal-co-authors/">https://www.science-shenanigans.com/animal-co-authors/</a>.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Animal%20Co-Authors&amp;rft.description=Animals%20play%20an%20important%20role%20in%20scientific%20research%2C%20but%20usually%20not%20quite%20to%20the%20extent%20of%20having%20full%20blown%20animal%20co-authors%20on%20research%20papers.&amp;rft.identifier=https%3A%2F%2Fwww.science-shenanigans.com%2Fanimal-co-authors%2F&amp;rft.au=undefined&amp;rft.date=2017-07-14&amp;rft.language=en-US"></span>
+  <div class="csl-entry">WALSH, FROMA. ‘Human-Animal Bonds I: The Relational Significance of Companion Animals’. <i>Family Process</i>, vol. 48, no. 4, 2009, pp. 462–80. <a href="https://doi.org/10.1111/j.1545-5300.2009.01296.x">https://doi.org/10.1111/j.1545-5300.2009.01296.x</a>.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1111%2Fj.1545-5300.2009.01296.x&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Human-Animal%20Bonds%20I%3A%20The%20Relational%20Significance%20of%20Companion%20Animals&amp;rft.jtitle=Family%20process&amp;rft.volume=48&amp;rft.issue=4&amp;rft.aufirst=FROMA&amp;rft.aulast=WALSH&amp;rft.au=FROMA%20WALSH&amp;rft.date=2009&amp;rft.pages=462%E2%80%93480&amp;rft.spage=462&amp;rft.epage=480&amp;rft.issn=0014-7370&amp;rft.language=eng"></span>
+  <div class="csl-entry">---. ‘Human-Animal Bonds II: The Role of Pets in Family Systems and Family Therapy’. <i>Family Process</i>, vol. 48, no. 4, 2009, pp. 481–99. <a href="https://doi.org/10.1111/j.1545-5300.2009.01297.x">https://doi.org/10.1111/j.1545-5300.2009.01297.x</a>.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1111%2Fj.1545-5300.2009.01297.x&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Human-Animal%20Bonds%20II%3A%20The%20Role%20of%20Pets%20in%20Family%20Systems%20and%20Family%20Therapy&amp;rft.jtitle=Family%20process&amp;rft.volume=48&amp;rft.issue=4&amp;rft.aufirst=FROMA&amp;rft.aulast=WALSH&amp;rft.au=FROMA%20WALSH&amp;rft.date=2009&amp;rft.pages=481%E2%80%93499&amp;rft.spage=481&amp;rft.epage=499&amp;rft.issn=0014-7370&amp;rft.language=eng"></span>
+</div>
 	  
 	  <h4>Project</h4>
 		<ul>
@@ -676,7 +756,7 @@ Cognitive: increase visitor participation (new services as “Search for your pe
 		<li>Haraway. <i class=title>The Companion Species Manifesto: Dogs, People, and Significant Otherness</i>, 2003</li>
 		</ul>
 		
-		<h4>In History section (vedere se riusciamo a richiamare le bibliografie dei modals)</h4>
+	<h4>In History section (vedere se riusciamo a richiamare le bibliografie dei modals)</h4>
 		<ul>
 		<li>Arluke, Arnold., and Lauren. Rolfe. <i class=title>The Photographed Cat Picturing Human-Feline Ties 1890-1940</i>. First ed. 2013.</li>
 		<li><i class=title>Dogs & Cats in Art Wednesday, 22nd January 1997</i>. London: Bonhams, 1996. https://almastart.unibo.it/permalink/f/10694hg/39UBO_SEBINA_DSUBO3965883</li>
@@ -702,12 +782,12 @@ Cognitive: increase visitor participation (new services as “Search for your pe
   	<div class="accordion-item">
 		<h2 class="accordion-header" id="headingComplementary">
 		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComplementary" aria-expanded="true" aria-controls="collapseComplementary">
-		Complementary Material for the Discussion
+		Complementary Material for the Discussion: 3d object and scenes
+
 		</button></h2>
 		<div id="collapseComplementary" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       	<div class="accordion-body">
-	  <h3>Complementary Material for the Discussion</h3>
-		<h4>3d object or scene (3D)</h4>
+	  
 		<div class="sketchfab-embed-wrapper">
 		<iframe title="Frida's room" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e5f124def4dc40dcaf96f73a2363854c/embed?annotations_visible=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/fridas-room-e5f124def4dc40dcaf96f73a2363854c?utm_medium=embed&utm_campaign=share-popup&utm_content=e5f124def4dc40dcaf96f73a2363854c" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Frida's room </a> by <a href="https://sketchfab.com/alisiazarbo?utm_medium=embed&utm_campaign=share-popup&utm_content=e5f124def4dc40dcaf96f73a2363854c" target="_blank" style="font-weight: bold; color: #1CAAD9;"> alisiazarbo </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=e5f124def4dc40dcaf96f73a2363854c" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 		</div>
