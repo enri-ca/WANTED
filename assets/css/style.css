@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 img{
   padding: 1vw;
   margin-top: 1.5vw;
+	width: 100%:
 }
 
 .destra {
@@ -101,7 +102,7 @@ img{
 h6{
 	font-weight: bold;
 }
-
+table {width: 100%;}
 tr:nth-child(even) {background-color: #f2f2f2;}
 
 .iframe{
