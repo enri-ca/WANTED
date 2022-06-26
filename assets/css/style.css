@@ -10,6 +10,10 @@
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.arrow{
+	width:14%;
+	margin-left:46%;
+}
 .two-grid{
   display: grid;
   grid-template-areas: 'left right';
