@@ -99,7 +99,7 @@ img{
   overflow: scroll;
 }
 
-h6{
+h5, h6{
 	font-weight: bold;
 }
 table {width: 100%;}
