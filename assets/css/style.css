@@ -67,6 +67,10 @@ img{
 	width: 100%;
 }
 
+.testimonial-item img {
+  width: 25vw;
+}
+
 .destra {
   grid-area: right;
 }
