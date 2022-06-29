@@ -26,11 +26,13 @@
 
 .right{
   grid-area: right;
+padding:1vw;
 
 }
 
 .left{
   grid-area: left;
+	padding:1vw;
 }
 
 body {
